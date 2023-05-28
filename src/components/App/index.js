@@ -1,9 +1,10 @@
 // == Import
+import Header from '../Header';
 import './styles.css';
 
 // == Composant
 const App = () => (
-  <div>tes1t</div>
+  <Header />
 );
 
 // == Export
