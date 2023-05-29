@@ -1,21 +1,23 @@
 // == Import
 import Header from '../Header';
+import Ingredients from '../Ingredients';
+import Instructions from '../Instructions';
 import './styles.css';
 
-// == Composant
-const App = () => {
-  const thumbnail = 'https://images.pexels.com/photos/53483/strawberries-crepe-dessert-sweet-53483.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
+import data from '../../../data/recipes';
 
-  return (
-    <div className="container">
-      <Header
-        title="Crepes rafinées"
-        author="Jhon Deuf"
-        difficulty="Facile"
-        thumbnail={thumbnail}
-      />
-    </div>
-  );
-};
+// == Composant
+const App = () => (
+  <div className="container">
+    <Header
+      title={data.title}
+      author={data.author}
+      difficulty={data.difficulty}
+      thumbnail={data.thumbnail}
+    />
+    <Ingredients ingredients={data.ingredients} />
+    <Instructions instructions={data.instructions} />
+  </div>
+);
 // == Export
 export default App;

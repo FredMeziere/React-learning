@@ -1,14 +1,15 @@
+import PropTypes from 'prop-types';
 import './styles.scss';
 
 const Header = ({
   title,
   author,
   difficulty,
-  thumbnail
+  thumbnail,
 }) => (
   <header className="header">
     <img
-      src={ thumbnail }
+      src={thumbnail}
       alt="Crepes"
       className="header-image"
     />
@@ -22,3 +23,10 @@ const Header = ({
 );
 
 export default Header;
+
+Header.propTypes = {
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  difficulty: PropTypes.string.isRequired,
+  thumbnail: PropTypes.string.isRequired,
+};

@@ -41,7 +41,7 @@ export default {
       name: 'de lait',
     },
     {
-      id: 845,
+      id: 85,
       quantity: 3,
       unit: 'cuillerées à soupe',
       name: 'de rhum ambré ou vieux',
